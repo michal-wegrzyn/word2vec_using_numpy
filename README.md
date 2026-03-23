@@ -39,7 +39,7 @@ where $v_c$ is the center vector, $u_o$ is the true context vector, and $u_k$ ar
 
 - **Negative sampling** — 5 noise words per positive pair, sampled from a unigram distribution raised to the 3/4 power to balance rare and frequent words
 - **Subsampling** — frequent words are randomly discarded before pair generation with probability $1 - \sqrt{t / f(w)}$, where $t = 10^{-5}$
-- **Random window size** — window radius sampled uniformly from $[1, max\_window]$ each step
+- **Random window size** — window radius sampled uniformly from $[1, \text{max window}]$ each step
 - **Linear LR decay** — learning rate decays linearly from 0.025 to 0.0001 over the full training run
 
 ## Getting Started
